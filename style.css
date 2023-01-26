@@ -1,0 +1,89 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+:root {
+  --primary: #7159c1;
+}
+
+body {
+  height: 100vh;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='55' height='55' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%235e49ae' fill-opacity='0.46'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.46'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#player {
+  background-color: white;
+  width: 90%;
+  max-width: 375px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  box-shadow: none;
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.card-image {
+  background: url("https://placehold.it/500") no-repeat center center / cover;
+  height: 200px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#play-pause {
+  background-color: var(--primary);
+  border: none;
+}
+
+#play-pause:hover {
+  background-color: #2d234d;
+  transition: .5s;
+}
+
+#mute {
+  color: var(--primary);
+  transform: translateY(2px);
+  border: none;
+}
+
+#mute:hover {
+  background-color: #2d234d;
+  transition: 1.5s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--primary);
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--primary);
+}
+
+input[type="range"]::-ms-thumb {
+  background-color: var(--primary);
+}
